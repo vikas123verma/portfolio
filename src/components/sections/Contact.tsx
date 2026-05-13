@@ -41,8 +41,8 @@ export default function Contact() {
         </svg>
       ),
       label: 'Email',
-      value: 'vikas@example.com',
-      href: 'mailto:vikas@example.com',
+      value: 'vikasvermasde@gmail.com',
+      href: 'mailto:vikasvermasde@gmail.com',
     },
     {
       icon: (
@@ -51,8 +51,8 @@ export default function Contact() {
         </svg>
       ),
       label: 'Phone',
-      value: '+91 XXXXX XXXXX',
-      href: 'tel:+91XXXXXXXXXX',
+      value: '+91 9161083119',
+      href: 'tel:+919161083119',
     },
     {
       icon: (
@@ -61,8 +61,8 @@ export default function Contact() {
         </svg>
       ),
       label: 'LinkedIn',
-      value: 'linkedin.com/in/vikasverma',
-      href: 'https://linkedin.com/in/vikasverma',
+      value: 'linkedin.com/in/mrvikasverma',
+      href: 'https://www.linkedin.com/in/mrvikasverma',
     },
   ];
 
