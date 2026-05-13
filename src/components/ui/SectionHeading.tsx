@@ -13,7 +13,7 @@ export default function SectionHeading({ label, title, description }: SectionHea
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="text-center mb-12 lg:mb-16"
+      className="text-center mb-8 lg:mb-12"
     >
       <span className="code-block inline-block mb-4 px-4 py-1.5 rounded-full glass text-xs tracking-widest uppercase">
         {'// '}{label}

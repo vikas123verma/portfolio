@@ -154,13 +154,13 @@ export default function Hero() {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="w-5 h-8 rounded-full border border-white/20 flex justify-center pt-1.5"
           >
             <div className="w-1 h-2 rounded-full bg-white/30" />
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

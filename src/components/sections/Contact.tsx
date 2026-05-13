@@ -1,38 +1,7 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
 import SectionHeading from '../ui/SectionHeading';
 import GlassCard from '../ui/GlassCard';
-import Button from '../ui/Button';
-
-interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
 
 export default function Contact() {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In production, integrate with EmailJS or a backend API
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
-
   const contactInfo = [
     {
       icon: (
@@ -66,23 +35,20 @@ export default function Contact() {
     },
   ];
 
-  const inputClasses =
-    'w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/20 transition-all duration-300 text-sm';
-
   return (
     <section id="contact" className="section-padding relative">
       <div className="orb orb-indigo w-[500px] h-[500px] bottom-0 left-1/2 -translate-x-1/2 opacity-10" />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           label="Get in Touch"
           title="Let's Build Something"
           description="Have a project in mind or want to discuss backend architecture? I'd love to hear from you."
         />
 
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="space-y-4">
             {contactInfo.map((info, i) => (
               <GlassCard key={info.label} delay={i * 0.1} className="p-6">
                 <a
@@ -103,10 +69,12 @@ export default function Contact() {
                 </a>
               </GlassCard>
             ))}
+          </div>
 
-            {/* Availability Card */}
-            <GlassCard delay={0.3} className="p-6 mt-2">
-              <div className="flex items-center gap-4">
+          {/* Availability & Social */}
+          <div className="space-y-4">
+            <GlassCard delay={0.3} className="p-6 h-full flex flex-col justify-center">
+              <div className="flex items-center gap-4 mb-6">
                 <span className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse shadow-lg shadow-emerald-400/30" />
                 <div>
                   <p className="text-white/80 text-sm font-bold">Available for work</p>
@@ -115,99 +83,14 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
+              <div className="pt-6 border-t border-white/5">
+                <p className="text-white/40 text-sm leading-relaxed">
+                  Looking for a software engineer to help build your next scalable system? 
+                  Reach out via email or LinkedIn.
+                </p>
+              </div>
             </GlassCard>
           </div>
-
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-3"
-          >
-            <div className="glass rounded-2xl p-6 md:p-10">
-              {submitted ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="text-center py-12"
-                >
-                  <div className="text-4xl mb-4">✓</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
-                  <p className="text-white/40">I'll get back to you as soon as possible.</p>
-                </motion.div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block text-xs text-white/30 mb-1.5 font-mono">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="Your name"
-                        className={inputClasses}
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-xs text-white/30 mb-1.5 font-mono">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="you@company.com"
-                        className={inputClasses}
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-xs text-white/30 mb-1.5 font-mono">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      placeholder="What's this about?"
-                      className={inputClasses}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-xs text-white/30 mb-1.5 font-mono">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      placeholder="Tell me about your project or role..."
-                      className={`${inputClasses} resize-none`}
-                    />
-                  </div>
-                  <Button variant="primary" className="w-full justify-center">
-                    Send Message
-                  </Button>
-                </form>
-              )}
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
