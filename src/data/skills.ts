@@ -20,7 +20,8 @@ export const skillCategories: SkillCategory[] = [
       { name: 'GraphQL' },
       { name: 'TypeScript' },
       { name: 'JavaScript' },
-      { name: 'Python' },
+      { name: 'PHP' },
+      { name: 'Laravel' },
     ],
   },
   {

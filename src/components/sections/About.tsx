@@ -66,7 +66,7 @@ export default function About() {
         <SectionHeading
           label="About Me"
           title="Engineering at Scale"
-          description="5+ years building production backend systems that power businesses handling millions of daily transactions."
+          description="Over 7 years building production backend systems that power businesses handling millions of daily transactions."
         />
 
         {/* About Content */}
@@ -81,7 +81,7 @@ export default function About() {
             <div className="space-y-6 text-white/60 leading-relaxed text-lg">
               <p className="text-white/80">
                 I'm a Backend Engineer with {' '}
-                <span className="text-white font-semibold underline decoration-indigo-500/50 underline-offset-4">5 years of experience</span>{' '}
+                <span className="text-white font-semibold underline decoration-indigo-500/50 underline-offset-4">7 years of experience</span>{' '}
                 building scalable, reliable systems that serve hundreds of thousands of users daily.
               </p>
               <p>

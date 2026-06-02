@@ -27,6 +27,13 @@ const badgeColorMap: Record<string, 'indigo' | 'cyan' | 'emerald' | 'violet' | '
   'Distributed Systems': 'indigo',
   'Performance Optimization': 'amber',
   'Event-Driven Architecture': 'cyan',
+  'E-Learning': 'violet',
+  'MVC Architecture': 'indigo',
+  'Interactive Quizzes': 'rose',
+  'PHP/Laravel': 'emerald',
+  'Booking Engine': 'amber',
+  'Database Transactions': 'emerald',
+  'Admin Dashboard': 'indigo',
 };
 
 export default function Projects() {

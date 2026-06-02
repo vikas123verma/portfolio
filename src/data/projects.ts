@@ -100,4 +100,47 @@ export const projects: Project[] = [
     gradient: 'from-amber-600 via-orange-600 to-rose-600',
     accentColor: 'amber',
   },
+  {
+    id: 'skill4study',
+    title: 'Skill4Study',
+    subtitle: 'Interactive English Learning & Resource Platform',
+    problem:
+      'Learners of all levels needed an interactive, structured platform offering diverse English exercises, grammar resources, and progress tracking tools to improve their language skills.',
+    architecture:
+      'Monolithic MVC application using PHP / Laravel, serving dynamic templates. Implemented modular quiz/exercise engines and robust progress trackers in MySQL.',
+    impact: [
+      'Successfully served English learning resources to thousands of active learners',
+      'Engineered interactive quiz modules supporting multiple exercise types',
+      'Designed progress dashboards ensuring seamless tracking of user scores and course completion',
+      'Created custom content management tools for administrators to easily publish new study material',
+    ],
+    technologies: [
+      'PHP', 'Laravel', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Git',
+    ],
+    badges: ['E-Learning', 'MVC Architecture', 'Interactive Quizzes', 'PHP/Laravel'],
+    gradient: 'from-violet-600 via-indigo-600 to-purple-600',
+    accentColor: 'indigo',
+  },
+  {
+    id: 'villamanager',
+    title: 'Villa Manager',
+    subtitle: 'User-Friendly Hotel Booking & Reservation Website',
+    problem:
+      'Hotel users needed an intuitive website to search for accommodations, compare prices and amenities, and book reservations seamlessly without friction.',
+    architecture:
+      'RESTful API architecture using Node.js, Express.js, and MongoDB. Integrates frontend search parameters with backend availability validation and email notification hooks.',
+    impact: [
+      'Designed user-friendly search interfaces and comparisons for hotel options',
+      'Built custom availability-checking logic preventing duplicate reservations',
+      'Optimized booking flows resulting in seamless reservations and automatic email updates',
+      'Configured admin panels to manage properties, room statuses, and customer bookings',
+    ],
+    technologies: [
+      'Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'REST APIs', 'HTML5', 'CSS3', 'Git',
+    ],
+    badges: ['Booking Engine', 'Database Transactions', 'REST APIs', 'Admin Dashboard'],
+    gradient: 'from-emerald-600 via-teal-600 to-cyan-600',
+    accentColor: 'emerald',
+  },
 ];
+

@@ -57,4 +57,25 @@ export const experiences: Experience[] = [
     ],
     color: 'cyan',
   },
+  {
+    id: 'babysoft',
+    company: 'Babysoft Software',
+    role: 'Back End Developer',
+    duration: 'Feb 2019 — Oct 2021',
+    location: 'Lucknow, Uttar Pradesh (Remote)',
+    description:
+      'Joined as a Software Developer Intern and was promoted to a full-time Software Developer based on performance. Built robust RESTful APIs and backend services using Node.js, Express.js, and PHP / Laravel.',
+    highlights: [
+      'Built RESTful APIs using Node.js, Express.js, and PHP / Laravel to support dynamic web applications',
+      'Created efficient database schemas in MySQL and MongoDB, ensuring data integrity and fine-tuning application performance',
+      'Performed QA, browser compatibility, performance, and usability testing to ensure high-quality releases',
+      'Managed deployments and version control using Git, ensuring stable and reliable releases',
+    ],
+    technologies: [
+      'PHP', 'Laravel', 'Node.js', 'Express.js', 'TypeScript', 'JavaScript',
+      'MySQL', 'MongoDB', 'Git', 'GitHub',
+    ],
+    color: 'indigo',
+  },
 ];
+
