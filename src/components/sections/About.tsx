@@ -48,13 +48,13 @@ export default function About() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.813 15.904L9 21l-.813-5.096L3 15l5.096-.813L9 9l.813 5.187L15 15l-5.187.904z M18.096 5.187L17 9l-1.096-3.813L12 4l3.904-1.096L17 1l1.096 3.904L22 4l-3.904 1.096z" />
         </svg>
       ),
-      title: 'Cloud Native',
-      color: 'from-emerald-500/20 to-teal-500/20',
-      textColor: 'text-emerald-400',
-      text: 'Deploying and managing production infrastructure on AWS with Docker, CI/CD pipelines, and automated scaling.',
+      title: 'AI Assisted Dev',
+      color: 'from-fuchsia-500/20 to-pink-500/20',
+      textColor: 'text-fuchsia-400',
+      text: 'Leveraging LLMs and AI-powered IDEs (Cursor, Antigravity) to accelerate development, automate testing, and build agentic backend integrations.',
     },
   ];
 

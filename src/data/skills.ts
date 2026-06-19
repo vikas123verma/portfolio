@@ -100,4 +100,17 @@ export const skillCategories: SkillCategory[] = [
       { name: 'PM2' },
     ],
   },
+  {
+    title: 'AI & LLMs',
+    color: 'from-fuchsia-500 to-pink-500',
+    skills: [
+      { name: 'Gemini' },
+      { name: 'Claude' },
+      { name: 'Cursor' },
+      { name: 'Antigravity' },
+      { name: 'AI Agents' },
+      { name: 'Prompt Engineering' },
+    ],
+  },
 ];
+

@@ -27,8 +27,8 @@ export const projects: Project[] = [
       '35% improvement in database query performance',
     ],
     technologies: [
-      'Node.js', 'Express.js', 'MongoDB', 'Redis', 'BullMQ',
-      'AWS', 'Docker', 'Elasticsearch', 'Nginx',
+      'Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'BullMQ',
+      'AWS', 'Docker', 'Elasticsearch', 'Nginx', 'OpenAI API', 'REST APIs', 'Claude', 'Gemini'
     ],
     badges: ['Microservices', 'Queue Processing', 'Redis', 'Distributed Systems', 'Performance Optimization'],
     gradient: 'from-indigo-600 via-violet-600 to-purple-600',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
       'Integrated with 10+ social media and messaging platforms',
     ],
     technologies: [
-      'Node.js', 'Python', 'MongoDB', 'Redis', 'BullMQ',
+      'Node.js', 'Python', 'MySQL', 'MongoDB', 'Redis', 'BullMQ',
       'OpenAI API', 'AWS Lambda', 'REST APIs',
     ],
     badges: ['AI Automation', 'Queue Processing', 'REST APIs', 'Event-Driven Architecture'],
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       'Automated refund processing reducing manual intervention by 80%',
     ],
     technologies: [
-      'Node.js', 'Express.js', 'MongoDB', 'Redis',
+      'Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis',
       'Elasticsearch', 'BullMQ', 'AWS', 'Docker',
     ],
     badges: ['REST APIs', 'Redis', 'Queue Processing', 'Distributed Systems'],

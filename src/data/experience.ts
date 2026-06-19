@@ -30,8 +30,8 @@ export const experiences: Experience[] = [
       'Developed AI-assisted automation tools for social media content generation',
     ],
     technologies: [
-      'Node.js', 'Express.js', 'MongoDB', 'Redis', 'BullMQ', 'AWS',
-      'Docker', 'Elasticsearch', 'Microservices', 'REST APIs',
+      'Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'BullMQ', 'AWS',
+      'Docker', 'Elasticsearch', 'Microservices', 'REST APIs', 'OpenAI API', 'Claude', 'Gemini'
     ],
     color: 'indigo',
   },
@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
     ],
     technologies: [
       'Node.js', 'React', 'MySQL', 'MongoDB', 'Redis', 'Docker',
-      'AWS', 'JWT', 'GitHub Actions', 'REST APIs',
+      'AWS', 'JWT', 'GitHub Actions', 'REST APIs','OpenAI API'
     ],
     color: 'cyan',
   },
