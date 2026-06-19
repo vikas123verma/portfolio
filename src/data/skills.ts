@@ -43,9 +43,6 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'AWS (EC2, S3, Lambda)' },
       { name: 'Docker' },
-      { name: 'CI/CD' },
-      { name: 'Nginx' },
-      { name: 'Linux' },
       { name: 'GitHub Actions' },
       { name: 'CloudFront' },
     ],
