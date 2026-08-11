@@ -10,7 +10,7 @@ export default function Contact() {
         </svg>
       ),
       label: 'Email',
-      value: 'vikasvermasde@gmail.com',
+      value: 'vikasvermasde@gmail.com / vvaug1295@gmail.com',
       href: 'mailto:vikasvermasde@gmail.com',
     },
     {
@@ -85,7 +85,7 @@ export default function Contact() {
               </div>
               <div className="pt-6 border-t border-white/5">
                 <p className="text-white/40 text-sm leading-relaxed">
-                  Looking for a software engineer to help build your next scalable system? 
+                  Looking for a software engineer to help build your next scalable system?
                   Reach out via email or LinkedIn.
                 </p>
               </div>

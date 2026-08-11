@@ -27,12 +27,12 @@ export const skillCategories: SkillCategory[] = [
     title: 'Databases',
     color: 'from-cyan-500 to-blue-500',
     skills: [
-      { name: 'MongoDB' },
       { name: 'MySQL' },
       { name: 'PostgreSQL' },
+      { name: 'MongoDB' },
       { name: 'Redis' },
-      { name: 'Elasticsearch' },
       { name: 'Prisma' },
+      { name: 'Elasticsearch' },
       { name: 'Sequelize' },
       { name: 'Mongoose' },
     ],
@@ -52,6 +52,7 @@ export const skillCategories: SkillCategory[] = [
     color: 'from-amber-500 to-orange-500',
     skills: [
       { name: 'BullMQ' },
+      { name: 'RabbitMQ' },
       { name: 'Redis Pub/Sub' },
       { name: 'Event-Driven Architecture' },
       { name: 'Message Queues' },

@@ -61,8 +61,8 @@ export const experiences: Experience[] = [
     id: 'babysoft',
     company: 'Babysoft Software',
     role: 'Back End Developer',
-    duration: 'Feb 2019 — Oct 2021',
-    location: 'Lucknow, Uttar Pradesh (Remote)',
+    duration: 'Apr 2021 — Oct 2021',
+    location: 'Lucknow, Uttar Pradesh',
     description:
       'Joined as a Software Developer Intern and was promoted to a full-time Software Developer based on performance. Built robust RESTful APIs and backend services using Node.js, Express.js, and PHP / Laravel.',
     highlights: [
